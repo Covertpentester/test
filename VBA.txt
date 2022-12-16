@@ -1,0 +1,11 @@
+PowerShell:
+
+Sub X()
+    Shell "CMD /K %SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe", vbNormalFocus
+End Sub
+
+CMD:
+
+Sub X()
+    Shell "CMD /K %SystemRoot%\System32\cmd.exe", vbNormalFocus
+End Sub
